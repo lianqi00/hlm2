@@ -835,6 +835,7 @@ export default {
         }
       })
       
+      name = name.replace(/[\\/:*?"<>|\r\n]/g, '')
       return name || 'certificate'
     },
 
